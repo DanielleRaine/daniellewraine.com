@@ -1,18 +1,81 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <title>Danielle Raine's Website</title>
-    <meta name="viewport" content="width=device-width" />
-</head>
-<body>
+    <head>
+        <!-- character encoding -->
+        <meta charset="UTF-8">
 
-<h1>Danielle Raine's Portfolio Website</h1>
+        <!-- webpage title -->
+        <title>Danielle Raine's Website</title>
 
-<!-- This is how you make an input!! -->
-<!-- Example: <input type="range"/> -->
+        <!-- user's visible area of a web page -->
+        <meta name="viewport" content="width=device-width" />
 
-<!-- There are replaced, non-replaced, and void elements -->
+        <!-- css styles -->
+        <link rel="stylesheet" href="css/styles.css" />
 
-</body>
+        <!-- icon associated with website -->
+        <link rel="icon" type="image/svg" href="images/favicon.svg" />
+
+        <!-- alternate webpage for language translation -->
+        <!-- <link rel="alternate" href="https://www.danielleraine.dev/fr/" hreflang="fr-FR" /> -->
+
+        <!-- best webpage to represent the website -->
+        <link rel="canonical" href="https://www.danielleraine.dev" />
+
+        <!-- allowes server origins and script endpoints, which guards against cross-site scripting attacks -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy -->
+        <meta http-equiv="content-security-policy" content="default-src https:" />
+
+        <!-- description of the website displayed in search results, useful for search engine optimization (SEO) -->
+        <meta name="description" content="Danielle Raine's website." />
+
+        <!-- tells search engines to index website and follow links (is default) -->
+        <meta name="robots" content="index, follow" />
+
+        <!-- sets theme color of web browser -->
+        <meta name="theme-color" content="#776ab2" />
+
+        <!-- Open Graph protocol, which controls how social media sites display links to website content -->
+        <meta property="og:title" content="Danielle Raine's Website" />
+        <meta property="og:description" content="Danielle Raine's website." />
+        <meta property="og:image" content="images/danielle-raine.jpg" />
+        <meta property="og:image:alt" content="Photo of Danielle Raine." />
+
+        <!-- specifies metadata so that <head> element isn't cluttered -->
+        <!-- https://web.dev/learn/pwa/web-app-manifest -->
+        <link rel="manifest" href="manifest.json" />
+
+    </head>
+    <body>
+
+        <header>
+            <h1>Danielle Raine's Website</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#tutoring">Tutoring</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+            </nav>
+        </header>
+
+        <main></main>
+
+        <aside></aside>
+
+        <footer>
+            <p>Thanks!</p> 
+            <address>Contact: <a href="danielle.html">Danielle</address>
+        </footer>
+
+        <!-- javascript -->
+        <!-- <script defer src="js/" ></script> -->
+
+        </body>
 </html>
+
+<!-- Colors: https://www.color-hex.com/color-palette/1031202
+#c8b4ee Purple
+#fdbbeb Bink!
+#c1f2f6 Bue
+#ffffff White
+#776ab2 Porple -->
