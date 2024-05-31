@@ -1,0 +1,30 @@
+/* intrinsic vs extrinsic sizing */
+/* overflow: when content exceeds bounds of css box */
+/* margin box, border box, padding box, content box */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: #776ab2;
+    border: 0.5em solid #c8b4ee;
+    color: #ffffff;
+    padding: 1em;
+}
+
+a:link {
+
+}
+
+/* Colors: https://www.color-hex.com/color-palette/1031202
+#c8b4ee Purple
+#fdbbeb Bink!
+#c1f2f6 Bue
+#ffffff White
+#776ab2 Porple */

@@ -3,16 +3,12 @@
     <head>
         <!-- character encoding -->
         <meta charset="UTF-8">
-
         <!-- webpage title -->
         <title>Danielle Raine's Website</title>
-
         <!-- user's visible area of a web page -->
         <meta name="viewport" content="width=device-width" />
-
         <!-- css styles -->
         <link rel="stylesheet" href="css/styles.css" />
-
         <!-- icon associated with website -->
         <link rel="icon" type="image/svg" href="images/favicon.svg" />
 
@@ -41,9 +37,9 @@
         <meta property="og:image" content="images/danielle-raine.jpg" />
         <meta property="og:image:alt" content="Photo of Danielle Raine." />
 
-        <!-- specifies metadata so that <head> element isn't cluttered -->
+        <!-- for progressive web apps (pwa) -->
         <!-- https://web.dev/learn/pwa/web-app-manifest -->
-        <link rel="manifest" href="manifest.json" />
+        <!-- <link rel="manifest" href="manifest.json" /> -->
 
     </head>
     <body>
@@ -51,8 +47,8 @@
         <header>
             <h1>Danielle Raine's Website</h1>
             <nav>
-                <a href="#about">About</a>
-                <a href="#tutoring">Tutoring</a>
+                <a href="#about">About Me</a>
+                <a href="#tutoring" hidden>Tutoring</a>
                 <a href="#projects">Projects</a>
                 <a href="#resume">Resume</a>
             </nav>
@@ -63,26 +59,45 @@
                 <h2 id="about-heading">About Me</h2>
                 <p>
                     Hello everyone! My name is Danielle Raine, and
-                    I am a junior at The University of Texas at Dallas studying
+                    I am a second-year student at The University of Texas at Dallas studying
                     computer science and mathematics.
-
                 </p>
+                <!-- srcset="images/danielle-raine.jpg 800w, images/danielle-raine.jpg 1600w" sizes="(max-width: 200px) 100px, 200px" -->
+                <img src="images/danielle-raine.jpg" alt="Danielle Raine" width="400" height="400"/>
             </section>
-            <section id="tutoring" aria-labelledby="tutoring-heading">
+            <section id="tutoring" aria-labelledby="tutoring-heading" hidden >
                 <h2 id="tutoring-heading">Raine's Tutoring Service</h2>
                 <p>I tutor! Ain't that neat?</p>
             </section>
             <section id="projects" aria-labelledby="projects-heading">
                 <h2 id="projects-heading">Projects!!</h2>
+                <p>Cannot publicly share code for academic projects to maintain academic integrity.</sub>
                 <dl>
-                    <dt><strong>DaniBookStats (Spring 2024)</strong></dt>
+                    <dt><strong>DaniBookStats</strong> | Out in Tech x Samsung mentorship, Spring 2024</dt>
                     <dd>
                         (https://github.com/DanielleRaine/DaniBookStats)<br>
-                        Queried the Google Books API for ~1400 book entries in Python,
+                        Queried the Google Books API for ~1400 book entries with Requests in Python,
                         storing each books properties' into a MariaDB table.
                         With R, created multiple plots depicting book summary statistics
                         with data from the database.<br>
-                        This project was for the Out In Tech x Samsung mentorship.
+                    </dd>
+                    <dt><strong>Assignment 7: Word Count</strong> | Computer Architecture, Fall 2024</dt>
+                    <dd>
+                        Wrote a word count program in MIPS assembly that reads a file and records unique words,
+                        how many times they occur, and what lines they occur on in an
+                        ASCIIbetically sorted linked list, and prints the result.
+                    </dd>
+                    <dt><strong>Home-Hosted Modded Minecraft Server</strong> | Personal, Winter 2024</dt>
+                    <dd>
+                        Hosted a Minecraft server with Fabric mods using Ubuntu Server.
+                        Uses bash scripts to automate the startup and closing of the server at set hours in the day.
+                    </dd>
+                    <dt><strong>Spider-man: Beyond the Spider-verse Ticket Reservation System</strong> | Computer Science 2, Fall 2023</dt>
+                    <dd>
+                        Built a theater ticket management system that utilizes a hashmap to store
+                        user information that users can log into, reserve, and manage seats in
+                        auditoriums represented with linked lists.
+                        Data is saved to text files. Written in C++.
                     </dd>
                 </dl>
             </section>
@@ -105,10 +120,3 @@
 
     </body>
 </html>
-
-<!-- Colors: https://www.color-hex.com/color-palette/1031202
-#c8b4ee Purple
-#fdbbeb Bink!
-#c1f2f6 Bue
-#ffffff White
-#776ab2 Porple -->
