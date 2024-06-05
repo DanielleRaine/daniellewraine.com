@@ -20,13 +20,16 @@ header {
 
 #about {
     padding: 1em;
-
 }
 
 #projects {
     background-color: #fdbbeb;
     border: 0.5em solid #c8b4ee;
     color: #776ab2;
+    padding: 1em;
+}
+
+footer {
     padding: 1em;
 }
 
