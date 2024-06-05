@@ -18,8 +18,16 @@ header {
     padding: 1em;
 }
 
-a:link {
+#about {
+    padding: 1em;
 
+}
+
+#projects {
+    background-color: #fdbbeb;
+    border: 0.5em solid #c8b4ee;
+    color: #776ab2;
+    padding: 1em;
 }
 
 /* Colors: https://www.color-hex.com/color-palette/1031202
