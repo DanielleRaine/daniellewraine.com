@@ -1,46 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <!-- character encoding -->
         <meta charset="UTF-8">
-        <!-- webpage title -->
+
         <title>Danielle Raine's Website</title>
-        <!-- user's visible area of a web page -->
+
         <meta name="viewport" content="width=device-width" />
-        <!-- css styles -->
-        <link rel="stylesheet" href="css/styles.css" />
-        <!-- icon associated with website -->
+
+        <link rel="stylesheet" href="styles.css" />
+
         <link rel="icon" type="image/svg" href="images/favicon.svg" />
 
-        <!-- alternate webpage for language translation -->
-        <!-- <link rel="alternate" href="https://www.daniellewraine.com/fr/" hreflang="fr-FR" /> -->
-
-        <!-- best webpage to represent the website -->
         <link rel="canonical" href="https://www.danielleraine.dev" />
 
-        <!-- allowes server origins and script endpoints, which guards against cross-site scripting attacks -->
-        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy -->
-        <meta http-equiv="content-security-policy" content="default-src https:" />
-
-        <!-- description of the website displayed in search results, useful for search engine optimization (SEO) -->
-        <meta name="description" content="Danielle Raine's website." />
-
-        <!-- tells search engines to index website and follow links (is default) -->
-        <meta name="robots" content="index, follow" />
-
-        <!-- sets theme color of web browser -->
-        <meta name="theme-color" content="#776ab2" />
-
-        <!-- Open Graph protocol, which controls how social media sites display links to website content -->
-        <meta property="og:title" content="Danielle Raine's Website" />
-        <meta property="og:description" content="Danielle Raine's website." />
-        <meta property="og:image" content="images/danielle-raine.jpg" />
-        <meta property="og:image:alt" content="Photo of Danielle Raine at Samsung." />
-
-        <!-- for progressive web apps (pwa) -->
-        <!-- https://web.dev/learn/pwa/web-app-manifest -->
-        <!-- <link rel="manifest" href="manifest.json" /> -->
-
+        <meta name="description" content="Danielle W. Raine's website." />
     </head>
     <body>
 
@@ -48,37 +21,34 @@
             <h1>Danielle Raine's Website</h1>
             <nav>
                 <a href="#about">About Me</a>
-                <a href="#tutoring" hidden>Tutoring</a>
                 <a href="#projects">Projects</a>
-                <a href="#resume" hidden>Resume</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
 
         <main>
-            <section id="about" aria-labelledby="about-heading">
+            <section id="about">
                 <h2 id="about-heading">About Me</h2>
+
                 <p>
                     Hello everyone! My name is Danielle Raine, and
-                    I'm a second-year student at The University of Texas at Dallas. Pardon the state of the website! I'm still working on it.
+                    I'm a second-year student at the University of Texas at Dallas. Pardon the state of the website! I'm still working on it.
                 </p>
-                <!-- srcset="images/danielle-raine.jpg 800w, images/danielle-raine.jpg 1600w" sizes="(max-width: 200px) 100px, 200px" -->
-                <img src="./images/danielle-raine.jpg" alt="Photo of Danielle Raine at Samsung." width="400" height="400"/>
+
+                <img src="./images/danielle-raine.jpg" alt="Danielle Raine outside of Samsung Electronics America." width="400"/>
+
                 <p>
-                    Currently, I'm pursuing a double degree in Computer Science and Mathematics, and I'm also in the UTeach program!
-                    Teaching has always interested me, so I thought that it was about time I figured out if it was something I wanted to do.
+                    Currently, I'm pursuing a double degree in Computer Science and Mathematics!
                     Outside of school, I'm currently a Break Through Tech AI Fellow @ Cornell in the Spring 2024 virtual cohort. 
                     The work is challenging, but learning generally is, and I'm excited to see where it takes me.
                     Anyways, I hope you enjoy your stay on my website!
                 </p>
             </section>
-            <section id="tutoring" aria-labelledby="tutoring-heading" hidden >
-                <h2 id="tutoring-heading">Raine's Tutoring Service</h2>
-                <p>I tutor! Ain't that neat?</p>
-            </section>
-            <section id="projects" aria-labelledby="projects-heading">
+            <section id="projects"">
                 <h2 id="projects-heading">Projects!!</h2>
+
                 <p><em>(To maintain academic integrity, I cannot publicly share code for class projects)</em></p>
+
                 <dl>
                     <dt><strong><a href="https://github.com/DanielleRaine/DaniBookStats">DaniBookStats</a></strong> | Out in Tech x Samsung mentorship, Spring 2024</dt>
                     <dd>
@@ -87,17 +57,20 @@
                         With R, created multiple plots depicting book summary statistics
                         with data from the database.<br>
                     </dd>
+
                     <dt><strong>Assignment 7: Word Count</strong> | Computer Architecture, Fall 2024</dt>
                     <dd>
                         Wrote a word count program in MIPS assembly that reads a file and records unique words,
                         how many times they occur, and what lines they occur on in an
                         ASCIIbetically sorted linked list and prints the result.
                     </dd>
+
                     <dt><strong>Home-Hosted Modded Minecraft Server</strong> | Personal, Winter 2024</dt>
                     <dd>
                         Hosted a Minecraft server with Fabric mods using Ubuntu Server.
                         Uses bash scripts to automate the startup and closing of the server at set hours in the day.
                     </dd>
+
                     <dt><strong>Spider-man: Beyond the Spider-verse Ticket Reservation System</strong> | Computer Science 2, Fall 2023</dt>
                     <dd>
                         Built a theater ticket management system that utilizes a hashmap to store
@@ -107,26 +80,16 @@
                     </dd>
                 </dl>
             </section>
-            <section id="resume" aria-labelledby="resume-heading" hidden>
-                <h2 id="resume-heading">Want my resume?</h2>
-                <p>Here you go!</p>
-            </section>
         </main>
-
-        <aside></aside>
 
         <footer>
             <p>Thanks!</p> 
+
             <address id="contact">
                 Contact: <a href="mailto:danielle.w.raine@outlook.com">danielle.w.raine@outlook.com</a>
                 GitHub: <a href="github.com/DanielleRaine">DanielleRaine</a>
                 LinkedIn: <a href="linkedin.com/in/danielle-raine">Danielle Raine</a>
             </address>
         </footer>
-
-        <!-- javascript -->
-        <!-- <script defer src="js/" ></script> -->
-
-
     </body>
 </html>
